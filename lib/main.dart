@@ -30,6 +30,23 @@ class MyApp extends StatelessWidget {
 
           ],
         ),
+        bottomNavigationBar: new BottomNavigationBar(
+            items: [
+              new BottomNavigationBarItem(
+                  icon: new Icon(Icons.account_balance),
+                  title: new Text("Bank")
+              ),
+              new BottomNavigationBarItem(
+                  icon: new Icon(Icons.account_circle),
+                  title: new Text("Account")
+              ),
+              new BottomNavigationBarItem(
+                  icon: new Icon(Icons.account_box),
+                  title: new Text("Box")
+              ),
+            ]
+
+        ),
 
         body: new Center(
           child: new Text("Hello World"),
